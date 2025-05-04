@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Motisha ChatZone /J sost Zone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Karibu Motisha ChatZone /J sost Zone</h1>
+    <nav>
+      <a href="#profile">Akaunti Yangu</a>
+      <a href="#motivation">Motisha</a>
+      <a href="#chat">Chat</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PROFILE -->
+    <div id="profile" class="profile">
+      <h2>Akaunti Yangu</h2>
+      <img src="profile-pic.jpg" alt="Logo ya Mtumiaji" />
+      <p>Jina: Mtumiaji123</p>
+      <button>✔️ Thibitisha Akaunti (Tsh 200)</button><br/><br/>
+      <button>➕ Follow</button>
+      <button>🔁 Follow Back</button>
+      <button>➖ Unfollow</button>
+    </div>
+
+    <!-- UPLOAD FORM FOR USER -->
+    <div class="upload-form">
+      <h3>Upload Motisha Yako</h3>
+      <input type="file" id="uploadInput" accept="image/*,video/*" />
+      <textarea id="uploadMessage" placeholder="Andika ujumbe wako wa motisha..."></textarea>
+      <button onclick="uploadMotisha()">Tuma Motisha</button>
+    </div>
+
+    <!-- MOTISHA POSTS -->
+    <section id="motivation">
+      <h2>Motisha Zinazoendelea</h2>
+      <div id="motishaList">
+        <!-- Posts will be dynamically added here -->
+      </div>
+    </section>
+
+    <!-- CHAT SECTION -->
+    <section id="chat">
+      <h2>Chat</h2>
+      <div class="chat-box" id="chatBox">
+        <p><strong>Juma:</strong> Vipi kaka?</p>
+        <p><strong>Ali:</strong> Nipo poa bro.</p>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Andika ujumbe..." />
+        <button onclick="sendMessage()">Tuma</button>
+      </div>
+    </section>
+
+    <!-- ADMIN PANEL -->
+    <div class="admin-panel">
+      <h2>Admin Panel (Jonas Sosthenes)</h2>
+      <p>Logo ya Website:</p>
+      <input type="file" id="logoUpload" />
+      <p>Upload rasmi kutoka kwa Jonas:</p>
+      <input type="file" id="uploadFile" />
+      <textarea id="adminMotisha" placeholder="Andika ujumbe wa motisha rasmi..."></textarea><br/>
+      <button onclick="adminUpload()">Tuma Upload Rasmi</button><br/><br/>
+      <button onclick="alert('Akaunti hii imefungwa kwa muda kwa kukiuka masharti.')">⛔ Funga Akaunti kwa muda</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.facebook.com" class="social-icon">Facebook</a>
+      <a href="https://www.instagram.com" class="social-icon">Instagram</a>
+      <a href="https://www.tiktok.com" class="social-icon">TikTok</a>
+    </div>
+    <p>&copy; 2025 JZONE | J Sost Zone</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
